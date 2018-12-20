@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*:focus {
+    outline: 0;
+}
+
+body {
+  font-family: 'Open Sans';
+  margin: 0px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+#letter-chooser table tr td {
+  width: 25px;
+  height: 25px;
+  border: black 2px solid;
+  margin: 0px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#letter-chooser table {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
+td input {
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+
+header {
+  height: 150px;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px rgba(200, 200, 200, 0.5);
+}
+
+#header-left {
+  float: left;
+  width: 10%;
+}
+
+#bld-logo {
+  height: 150px;
+}
+
+
+#header-right {
+  float: left;
+  width: 90%;
+  text-align: center;
+}
+
+#title {
+  color: #111;
+  font-size: 30px;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#name {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#name:hover {
+  text-decoration: underline;
+}
+
+#letter-section {
+  text-align: center;
+}
+
+#generated-letters {
+  font-size: 150px;
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+
+#get-new-pair {
+  font-size: 30px;
+  border-color: #6666ff;
+  background-color: #6666ff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 30%;
+  height: 50px;
+}
+
+#choose-letter-scheme {
+  font-size: 30px;
+  border-color: #ff4d4d;
+  background-color: #ff4d4d;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 30%;
+  height: 50px;
+}
+
+#get-new-pair:hover {
+  background-color: #3333ff;
+  border-color: #3333ff;
+}
+
+#choose-letter-scheme:hover {
+  background-color: #ff1a1a;
+  border-color: #ff1a1a;
+}
+
+#letter-scheme-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  overflow: auto;
+  display: none;
+  animation-name: letterSchemeOpen;
+  animation-duration: 0.5s;
+}
+
+#letter-scheme {
+  display: auto;
+  width: 60%;
+  margin: 25vh auto;
+  background-color: #f2f2f2;
+  padding: 3px 10px 10px 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  height: 25%;
+  text-align: center;
+}
+
+#letter-scheme-heading {
+  text-decoration: underline;
+  width: 90%;
+  float: left;
+}
+
+#letter-scheme-x {
+  float: right;
+  background-color: #ff4d4d;
+  border-color: #ff4d4d;
+  color: #fff;
+  margin: 5px 5px 0 0;
+  font-size: 15px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+#letter-scheme-x:hover {
+  background-color: #ff1a1a;
+  border-color: #ff1a1a;
+}
+
+.choosers {
+  display: inline-block;
+  padding: 30px;
+}
+
+@keyframes letterSchemeOpen {
+  from{opacity:0}
+  to{opacity:1}
+}

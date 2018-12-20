@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Letter Pair Generator</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/media.css" type="text/css">
+    <link rel="shortcut icon" href="img/bldlogo.png" type="image/x-icon">
+  </head>
+  <body>
+    <div id="all">
+      <header>
+        <div id="header-left">
+          <img src="img/bldlogo.png" alt="BLD Logo" id="bld-logo">
+        </div>
+        <div id="header-right">
+          <h1 id="title">Letter Pair Generator</h1>
+          <h2 id="name">By Tam Quan</h2>
+        </div>
+      </header>
+      <section id="letter-section">
+        <h2 id="generated-letters">XX</h2>
+        <button id="get-new-pair">Get New Pair</button>
+        <button id="choose-letter-scheme">Settings</button>
+      </section>
+      <div id="letter-scheme-background">
+        <div><div><div><div><div><div><div>
+        <section id="letter-scheme">
+          <h2 id="letter-scheme-heading">Settings</h2>
+          <button id="letter-scheme-x">X</button>
+          <div class="choosers">
+            <h3 id="buffer-chooser">Buffer:</h3>
+            <input id="buffer" type="text" value="UFR">
+          </div>
+          <div class="choosers">
+            <h3>Top Colour</h3>
+            <select name="top-colour" id="top-colour-chooser">
+              <option value="w" selected>White</option>
+              <option value="g">Green</option>
+              <option value="r">Red</option>
+              <option value="b">Blue</option>
+              <option value="o">Orange</option>
+              <option value="y">Yellow</option>
+            </select>
+          </div>
+          <div class="choosers">
+            <h3>Front Colour</h3>
+            <select name="front-colour" id="front-colour-chooser">
+              <option value="w">White</option>
+              <option value="g" selected>Green</option>
+              <option value="r">Red</option>
+              <option value="b">Blue</option>
+              <option value="o">Orange</option>
+              <option value="y">Yellow</option>
+            </select>
+          </div>
+          <div id="letter-chooser">
+            <table id="u-face">
+              <tr>
+                <td>
+                  <input type="text" value="A" id="UBL">
+                </td>
+                <td class="edge-td"></td>
+                <td>
+                  <input type="text" value="B" id="UBR">
+                </td>
+              </tr>
+              <tr>
+                <td class="edge-td"></td>
+                <td class="face-center">U</td>
+                <td class="edge-td"></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" value="D" id="UFL">
+                </td>
+                <td class="edge-td"></td>
+                <td>
+                  <input type="text" value="C" id="UFR">
+                </td>
+              </tr>
+            </table>
+            <table id="l-face">
+              <tr>
+                <td>
+                  <input type="text" value="E" id="LBU">
+                </td>
+                <td class="edge-td"></td>
+                <td>
+                  <input type="text" value="F" id="LFU">
+                </td>
+              </tr>
+              <tr>
+                <td class="edge-td"></td>
+                <td class="face-center">L</td>
+                <td class="edge-td"></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" value="H" id="LBD">
+                </td>
+                <td class="edge-td"></td>
+                <td>
+                  <input type="text" value="G" id="LFD">
+                </td>
+              </tr>
+            </table>
+            <table id="f-face">
+              <tr>
+                <td>
+                  <input type="text" value="I" id="FUL">
+                </td>
+                <td class="edge-td"></td>
+                <td>
+                  <input type="text" value="J" id="FUR">
+                </td>
+              </tr>
+              <tr>
+                <td class="edge-td"></td>
+                <td class="face-center">F</td>
+                <td class="edge-td"></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" value="L" id="FDL">
+                </td>
+                <td class="edge-td"></td>
+                <td>
+                  <input type="text" value="K" id="FDR">
+                </td>
+              </tr>
+            </table>
+            <table id="r-face">
+              <tr>
+                <td>
+                  <input type="text" value="M" id="RFU">
+                </td>
+                <td class="edge-td"></td>
+                <td>
+                  <input type="text" value="N" id="RBU">
+                </td>
+              </tr>
+              <tr>
+                <td class="edge-td"></td>
+                <td class="face-center">R</td>
+                <td class="edge-td"></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" value="P" id="RFD">
+                </td>
+                <td class="edge-td"></td>
+                <td>
+                  <input type="text" value="O" id="RBD">
+                </td>
+              </tr>
+            </table>
+            <table id="b-face">
+              <tr>
+                <td>
+                  <input type="text" value="Q" id="BUR">
+                </td>
+                <td class="edge-td"></td>
+                <td>
+                  <input type="text" value="R" id="BUL">
+                </td>
+              </tr>
+              <tr>
+                <td class="edge-td"></td>
+                <td class="face-center">B</td>
+                <td class="edge-td"></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" value="T" id="BDR">
+                </td>
+                <td class="edge-td"></td>
+                <td>
+                  <input type="text" value="S" id="BDL">
+                </td>
+              </tr>
+            </table>
+            <table id="d-face">
+              <tr>
+                <td>
+                  <input type="text" value="U" id="DFL">
+                </td>
+                <td class="edge-td"></td>
+                <td>
+                  <input type="text" value="V" id="DFR">
+                </td>
+              </tr>
+              <tr>
+                <td class="edge-td"></td>
+                <td class="face-center">D</td>
+                <td class="edge-td"></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" value="X" id="DBL">
+                </td>
+                <td class="edge-td"></td>
+                <td>
+                  <input type="text" value="W" id="BDR">
+                </td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        </div></div></div></div></div></div></div>
+      </div>
+    </div>
+    <script src="js/getletter.js"></script>
+    <script src="js/colourchooser.js"></script>
+    <script src="js/letterscheme.js"></script>
+  </body>
+</html>

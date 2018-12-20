@@ -1,0 +1,60 @@
+@media only screen and (max-width: 1200px) {
+  #letter-chooser table {
+    margin: 0 5%;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  #get-new-pair {
+    display: block;
+    width: 80%;
+    margin: 0 10%;
+  }
+  #choose-letter-scheme {
+    display: block;
+    width: 80%;
+    margin: 10px 10%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #bld-logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  header {
+    height: 120px;
+  }
+
+  #letter-scheme-heading {
+    text-decoration: underline;
+    width: 80%;
+    float: left;
+  }
+
+  .choosers {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #bld-logo {
+    width: 90px;
+    height: 90px;
+  }
+
+  header {
+    height: 90px;
+  }
+
+  #title {
+    font-size: 27px;
+  }
+
+  #name {
+    font-size: 15px;
+  }
+}
